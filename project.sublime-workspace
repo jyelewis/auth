@@ -1,0 +1,385 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"register",
+				"registeredControls"
+			],
+			[
+				"configure",
+				"configureLoopHandler"
+			],
+			[
+				"change",
+				"changeHandler"
+			],
+			[
+				"hie",
+				"hideMe"
+			],
+			[
+				"NotImp",
+				"NotImplementedError	error"
+			],
+			[
+				"not",
+				"NotImplementedError	error"
+			],
+			[
+				"tornado",
+				"tornadoObj"
+			],
+			[
+				"Res",
+				"response"
+			],
+			[
+				"end",
+				"endContentsPos"
+			],
+			[
+				"ios",
+				"isHandlingSelfClosing"
+			],
+			[
+				"self",
+				"selfClosingTags"
+			],
+			[
+				"is",
+				"isSelfClosing"
+			],
+			[
+				"start",
+				"startContentsPos"
+			],
+			[
+				"data",
+				"dataRows"
+			],
+			[
+				"sp",
+				"splitData"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 372,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/python3.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git dif",
+				"Git: Diff Current File"
+			],
+			[
+				"Package Control: se",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jyelewis/Dropbox/Public/media_rc/todo.txt",
+		"/Users/jyelewis/Dropbox/dev/Hacking/rc.py",
+		"/Users/jyelewis/Dropbox/dev/Hacking/rc/generateTodo.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/redirect.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/app.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/validation.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/validators/range.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/validators/__init__.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/validators/Base.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/validationGroup.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/validators/required.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/Checkbox.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/Loop.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/include.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/includeTest.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/include.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/includeTest.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/file.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/PageClasses.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/include.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/__init__.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/untitled",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/file.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/index.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/Page.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controlManager.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/parser.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/network.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/validation.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/Dropdown.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/servers/tornado.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/session.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/session.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/index.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/chat.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/chat.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/test.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/test.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/Button.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/LinkButton.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/html.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/nestedLoops.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/nestedLoops.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/FileUpload.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/repeaterValidators.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/repeaterValidators.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/ControlBase.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/PageController.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/dropdown.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/dropdown.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/planning validators.txt",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/Panel.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/Textbox.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/CustomControl.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/input.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/loopTesting.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/loopTesting.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/testing.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/webpages/__init__.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/index.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/customControls.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/index.html",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/test.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/controls/date.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/servers/__init__.py",
+		"/Users/jyelewis/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jyelewis/Dropbox/dev/pyForms/.gitignore",
+		"/Users/jyelewis/Dropbox/dev/pyForms/ctrlBold.py",
+		"/Users/jyelewis/Dropbox/dev/pyForms/pyForms/project.sublime-project",
+		"/Users/jyelewis/Library/Application Support/Sublime Text 2/Packages/User/python3.sublime-build",
+		"/Users/jyelewis/Google Drive/dev/pyForms/our.html",
+		"/Users/jyelewis/Google Drive/dev/pyForms/controls/test.py",
+		"/Users/jyelewis/Google Drive/dev/pyForms/controlManager.py",
+		"/Users/jyelewis/Google Drive/dev/pyForms/controls/__init__.py",
+		"/Users/jyelewis/Dev/node/presenter/public/css/style.css",
+		"/Users/jyelewis/Dev/node/travler5.1/applications/addison counter/app.json",
+		"/Users/jyelewis/Desktop/project euler/23.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"9999",
+			"_validator",
+			"configured",
+			"autoPostBackFunction",
+			"pyFormsPostback",
+			"self.loops",
+			"customRegisterFunc\nparse",
+			"dict",
+			"del",
+			"print",
+			"pageInstance",
+			"print",
+			"parse(",
+			"parse",
+			"print",
+			"id",
+			"get",
+			"&nbsp",
+			"print",
+			"&nbsp;",
+			"&nbsp",
+			"nbsp",
+			"print",
+			"     </",
+			"    <",
+			"rawdata"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.py",
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 171.0
+	},
+	"output.git":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true
+}
