@@ -11,6 +11,7 @@ class Control(pyForms.ControlBase.Base):
 		self.validatorIndexCount = 1
 
 
+
 	def parentConfigureFunc(self, ctrlToConfigure):
 		ctrlToConfigure.autoPostBackFunction = "pyForms_validate_"+str(self.validationGroupID)+"(event, true);"
 		if ctrlToConfigure.id is not None:
@@ -83,9 +84,7 @@ class Control(pyForms.ControlBase.Base):
 
 		javascript += """
 			if (isValid){
-				//pyForms_postback(); //this may have been here for a reason...
-				//I have taken it out because by manually posting back the button
-				//name is not set in the post arguments and cannot be detected as clicked
+				pyForms_postback();
 			} else {
 				if (e.preventDefault) {e.preventDefault();}
 			}
