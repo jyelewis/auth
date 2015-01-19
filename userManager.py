@@ -19,3 +19,11 @@ def isValidUser(email, password):
 	if user is not None:
 		return user['password'] == password
 	return False #email is incorrect
+
+def userIsAllowedApp(userID, appID):
+	#temp until db is in place
+	return appID in ['com.jyelewis.testing']
+
+def changePassword(userID, newPassword):
+	#temp until db is in place
+	print("Password was pretend changed")

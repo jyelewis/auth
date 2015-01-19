@@ -1,0 +1,138 @@
+<!DOCTYPE>
+<html server>
+	<head>
+		<title>{{pageTitle}}</title>
+		<style type="text/css">
+			html, body {
+				margin:0;
+				padding:0;
+				font-family:"Avenir", Arial;
+			}
+			body {
+				background-image: -webkit-radial-gradient(center center, circle cover, #fff, #ccc);
+
+			}
+			* {
+				box-sizing:border-box;
+			}
+			#divLogin {
+				margin:0 auto;
+				max-width:711px;
+				background-image:url('/Resources/shadow.png');
+				background-position:center;
+				padding:50px 80px;
+				min-height:420px;
+				margin-top:80px;
+			}
+			h1, h2 {
+				-webkit-text-stroke: 1px black;
+				color:#fff;
+				margin:0;
+				padding:0;
+			}
+			h1 {
+				font-size:40px;
+				text-align:center;
+			}
+			h2 {
+				font-size:25px;
+				margin-left:20px;
+			}
+			input[type=text], input[type=password], input[type=submit]  {
+				display:block;
+				width:100%;
+				margin-bottom:5px;
+				background-color:#fff;
+				border:1px solid #ccc;
+				padding:8px;
+				outline:none;
+			}
+			input[type=checkbox] {
+				margin-right:5px;
+			}
+			input[type=submit] {
+				width:100%;
+				color:#333;
+				background-color:#ccc;
+				font-size:14px;
+				margin-top:15px;
+				border:1px solid #999;
+				cursor:pointer;
+			}
+			input[type=submit].half {
+				width:calc(50% - 5px);
+				float:left;
+			}
+			input[type=submit].half.first {
+				margin-right:10px;
+			}
+			.validatorErr {
+				font-size:12px;
+				text-align:right;
+				padding-bottom:10px;
+				color:#f55;
+			}
+		</style>
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+	<body>
+		<div id="divLogin">
+			<panel server id="pnlLogin">
+				<h1>Login</h1>
+				<validationGroup server>
+					<textbox server id="tbxUsername" placeholder="john.smith" />
+					<validator:required server control="tbxUsername">
+						<div class="validatorErr">Please enter your username</div>
+					</validator:required>
+
+					<textbox server id="tbxPassword" placeholder="**********" type="password" />
+					<validator:required server control="tbxPassword">
+						<div class="validatorErr">Please enter a password</div>
+					</validator:required>
+
+					<checkbox server id="chkRememberMe" text="Remember me" />
+
+					<panel server id="authFail" visible="false">
+						<strong>Authentication failure</strong><br />
+					</panel>
+					<button server id="btnLogin" causesValidation>Login</button>
+				</validationGroup>
+			</panel>
+
+			<panel server id="pnlDone" visible="false">
+				<h1>Hello {{username}}</h1>
+				<br />
+				<panel server id="pnlChangePassword" visible="false">
+					<h2>Change password</h2>
+					<validationGroup server>
+						<textbox server type="password" id="tbxPasswordOld" placeholder="Current password" />
+						<validator:required server control="tbxPasswordOld" id="valTbxPasswordOld">
+							<div class="validatorErr">Please enter your current password</div>
+						</validator:required>
+						<div class="validatorErr" visible="false" id="divOldPasswordErr">Incorrect password</div>
+
+						<textbox server type="password" id="tbxPassword1" placeholder="New password" />
+						<validator:required server control="tbxPassword1" id="valTbxPassword1">
+							<div class="validatorErr">Please enter a new password</div>
+						</validator:required>
+
+						<textbox server type="password" id="tbxPassword2" placeholder="Confirm password" />
+						<validator:required server control="tbxPassword2" id="valTbxPassword2">
+							<div class="validatorErr">Please repeat your new password</div>
+						</validator:required>
+						<div class="validatorErr" visible="false" id="divPasswordsMatchErr">Passwords do not match</div>
+						
+						<button server id="btnCancelChangePassword" class="half first">Cancel</button>
+						<button server id="btnSavePassword" class="half" causesValidation>Save new password</button>
+						<div style="clear:both;"></div>
+					</validationGroup>
+				</panel>
+
+				<panel server id="pnlAccountButtons">
+					<button server id="btnChangePassword">Change Password</button>
+					<button server id="btnLogout">Logout</button>
+				</panel>
+			</panel>
+		</div>
+	</body>
+</html>

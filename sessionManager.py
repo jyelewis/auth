@@ -1,5 +1,6 @@
 import userManager
 import uuid
+import datetime
 
 sessions = {} #contains dictionary "authSessionID": (isAuthenticated: True, userID: 123)
 
@@ -13,37 +14,25 @@ def isAuthenticated(request):
 def getAuthenticatedUser(request):
 	if not isAuthenticated(request):
 		return None
-	return userManager.userByID(sessions[request.cookies['authSessionID']]['username'])
+	return userManager.userByID(sessions[request.cookies['authSessionID']]['userID'])
 
-def getSessionIDByUserID(userID):
-	for sessionID in sessions:
-		if sessions[sessionID]['userID'] == userID:
-			return sessionID
-	return None
-
-def setSession(request, response, username, isAuthenticated = True):
+def setSession(request, response, username, isAuthenticated = True, rememberMe = False):
 	user = userManager.userByUsername(username)
 	if user is None:
 		return False
 
-	currentSessionID = getSessionIDByUserID(user['userID'])
-	
-	if currentSessionID is not None:
-		sessionUUID = currentSessionID
-		sessions[currentSessionID]['isAuthenticated'] = isAuthenticated
-	else:
+	if isAuthenticated:
 		sessionUUID = str(uuid.uuid4())
-		sessions[sessionUUID] = {'isAuthenticated': isAuthenticated, 'userID':userManager.userByUsername(username)['userID']}
+		sessions[sessionUUID] = {'isAuthenticated': True, 'userID':userManager.userByUsername(username)['userID']}
 		#set cookie 'authSessionID' = sessionUUID
-		response.setCookie('authSessionID', sessionUUID, {
-			 'expires': None
-			,'domain': ""
-			,'path': "/"
-		})
-
-	
-
-	return sessionUUID
+		if rememberMe:
+			expires = datetime.datetime.utcnow() + datetime.timedelta(days=7) #set for 7 days
+		else:
+			expires = None
+		request.setCookie('authSessionID', sessionUUID, { 'expires': expires })
+		return sessionUUID
+	else:
+		request.setCookie('authSessionID', "", { 'expires': datetime.datetime.utcnow() - datetime.timedelta(days=1) })
 
 def getSession(request):
 	if isAuthenticated(request):
